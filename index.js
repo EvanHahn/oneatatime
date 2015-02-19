@@ -8,8 +8,13 @@ function oneAtATime(fn) {
 
   return function() {
     if (released) {
-      fn(release);
       released = false;
+      try {
+        fn(release);
+      } catch (err) {
+        release();
+        throw err;
+      }
     }
   };
 

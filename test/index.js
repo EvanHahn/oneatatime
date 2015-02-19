@@ -42,4 +42,15 @@ describe("one at a time", function() {
 
   });
 
+  it("releases the function if an error is thrown", function() {
+
+    var bad = oneAtATime(function() {
+      throw "error";
+    });
+
+    assert.throws(bad);
+    assert.throws(bad);
+
+  });
+
 });
