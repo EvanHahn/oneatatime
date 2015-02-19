@@ -10,7 +10,7 @@ describe("one at a time", function() {
 
     var wrapped = oneAtATime(function(release) {
       counter ++;
-      setTimeout(release, 10);
+      setTimeout(release, 2);
     });
 
     assert.equal(counter, 0);
@@ -36,9 +36,9 @@ describe("one at a time", function() {
       setTimeout(function() {
         assert.equal(counter, 2);
         done();
-      }, 20);
+      }, 5);
 
-    }, 20);
+    }, 5);
 
   });
 
