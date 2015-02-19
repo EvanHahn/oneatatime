@@ -1,0 +1,13 @@
+{
+  "name": "oneatatime",
+  "description": "don't execute an async function again until it's done",
+  "author": "Evan Hahn <me@evanhahn.com> (http://evanhahn.com)",
+  "version": "0.0.0",
+  "main": "index",
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "mocha": "^2.1.0"
+  }
+}
