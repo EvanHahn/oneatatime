@@ -4,6 +4,7 @@
   "author": "Evan Hahn <me@evanhahn.com> (http://evanhahn.com)",
   "version": "0.0.0",
   "main": "index",
+  "license": "Unlicense",
   "scripts": {
     "test": "mocha"
   },
